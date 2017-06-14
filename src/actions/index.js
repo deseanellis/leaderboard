@@ -6,7 +6,7 @@ export const SORT_LIST = 'SORT_LIST';
 
 export function GetList(mode) {
 
-  const URL_PREFIX = 'http://fcctop100.herokuapp.com/api/fccusers/top/';
+  const URL_PREFIX = 'https://fcctop100.herokuapp.com/api/fccusers/top/';
   var URL = (mode === '30-days') ? `${URL_PREFIX}recent` : `${URL_PREFIX}alltime`;
 
   const REQUEST = axios.get(URL);
